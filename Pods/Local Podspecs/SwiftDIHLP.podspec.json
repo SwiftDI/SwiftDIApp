@@ -1,0 +1,17 @@
+{
+  "name": "SwiftDIHLP",
+  "version": "0.0.7",
+  "license": "<LICENSE>",
+  "summary": "SwiftDI high level policy",
+  "homepage": "https://github.com/<PATH_TO_REPO>",
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source": {
+    "path": "."
+  },
+  "authors": {
+    "<AUTHOR_NAME>": "<AUTHOR_EMAIL>"
+  },
+  "source_files": "Sources/**/*.swift"
+}

@@ -1,0 +1,6 @@
+framework module SwiftDIHLP {
+  umbrella header "SwiftDIHLP-umbrella.h"
+
+  export *
+  module * { export * }
+}
