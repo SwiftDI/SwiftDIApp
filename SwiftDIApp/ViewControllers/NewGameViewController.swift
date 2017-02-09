@@ -6,7 +6,7 @@ class NewGameViewController: UIViewController {
     @IBOutlet weak var p2TextField: UITextField?
     @IBOutlet weak var gameResultLabel: UILabel?
 
-    let gameRepository = InMemoryGameRepository()
+    let gameRepository = FlatFileGameRepository()
     var observer: RPSGameObserver?
 
     override func viewDidLoad() {
