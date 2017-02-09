@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jWs-dx-tzC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jWs-dx-tzC">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -34,7 +34,7 @@
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="NewGameView" customModule="SwiftDIApp" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -116,13 +116,13 @@
                             <constraint firstItem="8Qg-9T-n0n" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="r67-2N-gSX"/>
                             <constraint firstItem="5Uv-uO-vIf" firstAttribute="top" secondItem="8Qg-9T-n0n" secondAttribute="bottom" constant="8" id="ycN-ah-2d3"/>
                         </constraints>
+                        <connections>
+                            <outlet property="gameResultLabel" destination="8Qg-9T-n0n" id="NSW-KX-Pzl"/>
+                            <outlet property="p1TextField" destination="y2P-ca-7L4" id="cih-l8-J2E"/>
+                            <outlet property="p2TextField" destination="JVy-KL-FLi" id="nop-rS-h6b"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Rock Paper Scissors" id="0wC-oX-4Kv"/>
-                    <connections>
-                        <outlet property="gameResultLabel" destination="8Qg-9T-n0n" id="OUd-nI-yfl"/>
-                        <outlet property="p1TextField" destination="y2P-ca-7L4" id="yUk-MD-05f"/>
-                        <outlet property="p2TextField" destination="JVy-KL-FLi" id="Yw7-nb-N4c"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -132,6 +132,10 @@
         <scene sceneID="C0K-2m-KgK">
             <objects>
                 <viewController id="kBO-NL-JFe" customClass="GameHistoryViewController" customModule="SwiftDIApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ox2-bf-LQL"/>
+                        <viewControllerLayoutGuide type="bottom" id="Iwt-8E-uvQ"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1zm-Sc-k7W">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="432"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -144,7 +148,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qkQ-Re-KKt" id="p5A-tG-WKf">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fsn-Q2-vcn">

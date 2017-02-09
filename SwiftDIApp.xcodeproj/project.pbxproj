@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		298A055EAB00309C00020719 /* Pods_SwiftDIAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 428E062347424FAE4762BA89 /* Pods_SwiftDIAppTests.framework */; };
 		9F53679E94400A72B0E07F27 /* Pods_SwiftDIApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A75C9BC0D347AFAC3A21D3C7 /* Pods_SwiftDIApp.framework */; };
+		FA19D1661E4CA0D100227E2C /* NewGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA19D1651E4CA0D100227E2C /* NewGameView.swift */; };
 		FA286F571E43976C00F6278F /* RPSGameObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA286F561E43976C00F6278F /* RPSGameObserver.swift */; };
 		FA286F5A1E43980500F6278F /* InMemoryGameRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA286F591E43980500F6278F /* InMemoryGameRepository.swift */; };
 		FA286F5D1E439B9300F6278F /* GameHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA286F5C1E439B9300F6278F /* GameHistoryViewController.swift */; };
@@ -47,6 +48,7 @@
 		A75C9BC0D347AFAC3A21D3C7 /* Pods_SwiftDIApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftDIApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1617113581017E73367C4FA /* Pods-SwiftDIAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDIAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDIAppTests/Pods-SwiftDIAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EEEA0BDD0DE7F997090A3E12 /* Pods-SwiftDIApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDIApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDIApp/Pods-SwiftDIApp.release.xcconfig"; sourceTree = "<group>"; };
+		FA19D1651E4CA0D100227E2C /* NewGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewGameView.swift; sourceTree = "<group>"; };
 		FA286F561E43976C00F6278F /* RPSGameObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RPSGameObserver.swift; sourceTree = "<group>"; };
 		FA286F591E43980500F6278F /* InMemoryGameRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InMemoryGameRepository.swift; sourceTree = "<group>"; };
 		FA286F5C1E439B9300F6278F /* GameHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameHistoryViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +114,14 @@
 				428E062347424FAE4762BA89 /* Pods_SwiftDIAppTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA19D1641E4CA0A200227E2C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA19D1651E4CA0D100227E2C /* NewGameView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		FA286F551E43974300F6278F /* Observers */ = {
@@ -206,6 +216,7 @@
 		FABC02ED1E40DF02000FCB6C /* SwiftDIApp */ = {
 			isa = PBXGroup;
 			children = (
+				FA19D1641E4CA0A200227E2C /* Views */,
 				FA7F15A31E4AC7A20047B199 /* Protocols */,
 				FA7F15A01E4AC7360047B199 /* Extensions */,
 				FA286F701E43D70100F6278F /* Presenters */,
@@ -448,6 +459,7 @@
 				FA286F5F1E439DD300F6278F /* RPSCell.swift in Sources */,
 				FA7F159F1E4ABF080047B199 /* FlatFileGameRepository.swift in Sources */,
 				FA7F15A51E4AC7B90047B199 /* Archiver.swift in Sources */,
+				FA19D1661E4CA0D100227E2C /* NewGameView.swift in Sources */,
 				FA286F721E43D72700F6278F /* GameResult+display.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
