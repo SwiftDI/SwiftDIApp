@@ -14,7 +14,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   SwiftDIHLP:
-    :commit: aa2f41b3002cc803b55dd51460b3fa5db1bda2dd
+    :commit: 36f4ab5a5a28ce3fdf3fd8dae1a5a99971079f09
     :git: https://github.com/alexbasson/SwiftDIHLP.git
 
 SPEC CHECKSUMS:

@@ -24,14 +24,14 @@ class FlatFileGameRepository: GameRepository {
         self.archiver = archiver
     }
 
-    func save(game: Game, completion: SaveGameCompletion) {
+    func save(game: Game, completion: @escaping SaveGameCompletion) {
         let savedGame = Game(p1: game.p1, p2: game.p2, result: game.result, id: UUID())
         games.append(savedGame)
         archiver.writeToDisk(fileURL: fileURL, items: games)
         completion(savedGame)
     }
 
-    func fetch(completion: FetchGamesCompletion) {
+    func fetch(completion: @escaping FetchGamesCompletion) {
         if let games = archiver.readFromDisk(fileURL: fileURL) as [Game]? {
             self.games = games
             completion(games)
@@ -40,7 +40,7 @@ class FlatFileGameRepository: GameRepository {
         completion([])
     }
 
-    func fetch(id: UUID, completion: FetchGameCompletion) {
+    func fetch(id: UUID, completion: @escaping FetchGameCompletion) {
         if let games = archiver.readFromDisk(fileURL: fileURL) as [Game]? {
             self.games = games
             completion(games.filter({$0.id! == id}).first)
