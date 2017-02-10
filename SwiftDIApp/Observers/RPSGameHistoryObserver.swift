@@ -22,8 +22,13 @@ class RPSGameHistoryObserver: GameHistoryObserver {
         callback(games)
     }
 
-    func fetched(game: Game?) {
+    func fetched(game: Game) {
         guard let callback = fetchGameCallback else { return }
         callback(game)
+    }
+
+    func gameNotFound() {
+        guard let callback = fetchGameCallback else { return }
+        callback(nil)
     }
 }

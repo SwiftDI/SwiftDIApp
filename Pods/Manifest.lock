@@ -1,7 +1,7 @@
 PODS:
   - Nimble (6.0.1)
   - Quick (1.1.0)
-  - SwiftDIHLP (0.0.13)
+  - SwiftDIHLP (0.0.14)
 
 DEPENDENCIES:
   - Nimble
@@ -14,13 +14,13 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   SwiftDIHLP:
-    :commit: cb28dcbcc8bfcdef00fb675ac6d1bd1384983532
+    :commit: 12d2296d601bf393e411d72c91b95d45804aa4fb
     :git: https://github.com/alexbasson/SwiftDIHLP.git
 
 SPEC CHECKSUMS:
   Nimble: 1527fd1bd2b4cf0636251a36bc8ab37e81da8347
   Quick: dafc587e21eed9f4cab3249b9f9015b0b7a7f71d
-  SwiftDIHLP: d62d95a5210e26067942c4a90b9f4b7109bb9f64
+  SwiftDIHLP: 8fc6b738b10187570abdd6f3dcd38611dd603737
 
 PODFILE CHECKSUM: 420e4eec5ba9e0797b9124cf12380a1690619753
 
