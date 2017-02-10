@@ -29,6 +29,8 @@
 		FABC02F41E40DF02000FCB6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FABC02F21E40DF02000FCB6C /* Main.storyboard */; };
 		FABC02F61E40DF02000FCB6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FABC02F51E40DF02000FCB6C /* Assets.xcassets */; };
 		FABC02F91E40DF02000FCB6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FABC02F71E40DF02000FCB6C /* LaunchScreen.storyboard */; };
+		FAD036741E4D53D9003B802C /* RESTfulGameRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD036731E4D53D9003B802C /* RESTfulGameRepositoryTests.swift */; };
+		FAD036761E4D5776003B802C /* RESTfulGameRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD036751E4D5776003B802C /* RESTfulGameRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,8 @@
 		FABC02FA1E40DF02000FCB6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FABC02FF1E40DF02000FCB6C /* SwiftDIAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftDIAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FABC03051E40DF02000FCB6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAD036731E4D53D9003B802C /* RESTfulGameRepositoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RESTfulGameRepositoryTests.swift; sourceTree = "<group>"; };
+		FAD036751E4D5776003B802C /* RESTfulGameRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RESTfulGameRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +142,7 @@
 			children = (
 				FA286F591E43980500F6278F /* InMemoryGameRepository.swift */,
 				FA7F159E1E4ABF080047B199 /* FlatFileGameRepository.swift */,
+				FAD036751E4D5776003B802C /* RESTfulGameRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -172,6 +177,7 @@
 			children = (
 				FA286FA71E44E38400F6278F /* InMemoryGameRepositoryTests.swift */,
 				FA7F159C1E4ABEC00047B199 /* FlatFileGameRepositoryTests.swift */,
+				FAD036731E4D53D9003B802C /* RESTfulGameRepositoryTests.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -461,6 +467,7 @@
 				FA7F15A51E4AC7B90047B199 /* Archiver.swift in Sources */,
 				FA19D1661E4CA0D100227E2C /* NewGameView.swift in Sources */,
 				FA286F721E43D72700F6278F /* GameResult+display.swift in Sources */,
+				FAD036761E4D5776003B802C /* RESTfulGameRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +477,7 @@
 			files = (
 				FA286F791E43D9E000F6278F /* GameResult+displaySpec.swift in Sources */,
 				FA286FA81E44E38400F6278F /* InMemoryGameRepositoryTests.swift in Sources */,
+				FAD036741E4D53D9003B802C /* RESTfulGameRepositoryTests.swift in Sources */,
 				FA7F159D1E4ABEC00047B199 /* FlatFileGameRepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -26,20 +26,15 @@ extension Game: Serializable {
     }
 
     func serialize() -> Serialized {
+        var dict = [
+            Key.P1: p1 as AnyObject,
+            Key.P2: p2 as AnyObject,
+            Key.Result: result.rawValue as AnyObject
+        ]
         if let id = id {
-            return [
-                Key.P1: p1 as AnyObject,
-                Key.P2: p2 as AnyObject,
-                Key.Result: result.rawValue as AnyObject,
-                Key.ID: id.uuidString as AnyObject
-            ]
-        } else {
-            return [
-                Key.P1: p1 as AnyObject,
-                Key.P2: p2 as AnyObject,
-                Key.Result: result.rawValue as AnyObject
-            ]
+            dict[Key.ID] = id.uuidString as AnyObject
         }
+        return dict
     }
 }
 

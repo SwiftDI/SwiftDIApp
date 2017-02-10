@@ -3,7 +3,7 @@ import SwiftDIHLP
 
 class NewGameViewController: UIViewController {
     var newGameView: NewGameView { return self.view as! NewGameView }
-    let gameRepository = InMemoryGameRepository()
+    let gameRepository = RESTfulGameRepository()
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "EmbedGameHistoryViewController") {
