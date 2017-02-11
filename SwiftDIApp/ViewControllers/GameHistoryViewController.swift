@@ -5,12 +5,12 @@ class GameHistoryViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView?
 
     var gameRepository: GameRepository? = nil
-    var observer: RPSGameHistoryObserver? = nil
+    var observer: RPSFetchGamesObserver? = nil
     var games: [Game] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        observer = RPSGameHistoryObserver(fetchGamesCallback: {
+        observer = RPSFetchGamesObserver(fetchGamesCallback: {
             (games: [Game]) in
             self.games = games
             DispatchQueue.main.async {

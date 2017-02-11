@@ -3,7 +3,7 @@ import SwiftDIHLP
 typealias RPSFetchGamesCallback = ([Game]) -> Void
 typealias RPSFetchGameCallback = (Game?) -> Void
 
-class RPSGameHistoryObserver: GameHistoryObserver {
+class RPSFetchGamesObserver: FetchGamesObserver, FetchGameObserver {
     let fetchGamesCallback: RPSFetchGamesCallback?
     let fetchGameCallback: RPSFetchGameCallback?
 
