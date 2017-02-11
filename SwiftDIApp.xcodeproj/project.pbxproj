@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		298A055EAB00309C00020719 /* Pods_SwiftDIAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 428E062347424FAE4762BA89 /* Pods_SwiftDIAppTests.framework */; };
+		2DBA11FE381EDFC49EE62103 /* RPSFetchGameObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBA1C331C991472287D9064 /* RPSFetchGameObserver.swift */; };
 		9F53679E94400A72B0E07F27 /* Pods_SwiftDIApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A75C9BC0D347AFAC3A21D3C7 /* Pods_SwiftDIApp.framework */; };
 		FA19D1661E4CA0D100227E2C /* NewGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA19D1651E4CA0D100227E2C /* NewGameView.swift */; };
 		FA286F571E43976C00F6278F /* RPSPlayGameObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA286F561E43976C00F6278F /* RPSPlayGameObserver.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2DBA1C331C991472287D9064 /* RPSFetchGameObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RPSFetchGameObserver.swift; sourceTree = "<group>"; };
 		428E062347424FAE4762BA89 /* Pods_SwiftDIAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftDIAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		653267F3596529FD8008EFD0 /* Pods-SwiftDIApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDIApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDIApp/Pods-SwiftDIApp.debug.xcconfig"; sourceTree = "<group>"; };
 		8D9351E8A9DB3A2E48F567A2 /* Pods-SwiftDIAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDIAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDIAppTests/Pods-SwiftDIAppTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 			children = (
 				FA286F561E43976C00F6278F /* RPSPlayGameObserver.swift */,
 				FA286F831E43F03B00F6278F /* RPSFetchGamesObserver.swift */,
+				2DBA1C331C991472287D9064 /* RPSFetchGameObserver.swift */,
 			);
 			path = Observers;
 			sourceTree = "<group>";
@@ -468,6 +471,7 @@
 				FA19D1661E4CA0D100227E2C /* NewGameView.swift in Sources */,
 				FA286F721E43D72700F6278F /* GameResult+display.swift in Sources */,
 				FAD036761E4D5776003B802C /* RESTfulGameRepository.swift in Sources */,
+				2DBA11FE381EDFC49EE62103 /* RPSFetchGameObserver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,8 +10,7 @@ class GameHistoryViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        observer = RPSFetchGamesObserver(fetchGamesCallback: {
-            (games: [Game]) in
+        observer = RPSFetchGamesObserver(callback: { (games: [Game]) in
             self.games = games
             DispatchQueue.main.async {
                 if let tableView = self.tableView {
