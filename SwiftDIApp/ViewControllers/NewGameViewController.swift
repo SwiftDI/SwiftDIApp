@@ -4,6 +4,16 @@ import SwiftDIHLP
 class NewGameViewController: UIViewController {
     var newGameView: NewGameView { return self.view as! NewGameView }
     let gameRepository = RESTfulGameRepository()
+    var playGame: PlayGame?
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        guard let embeddedViewController = self.childViewControllers.last,
+              let gameHistoryViewController = embeddedViewController as? GameHistoryViewController
+                else { return }
+        let observer = RPSPlayGameObserver(view: newGameView, gameHistoryViewController: gameHistoryViewController)
+        playGame = PlayGame(observer: observer, repo: gameRepository)
+    }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "EmbedGameHistoryViewController") {
@@ -13,14 +23,7 @@ class NewGameViewController: UIViewController {
     }
 
     @IBAction func playButtonTapped() {
-        guard let embeddedViewController = self.childViewControllers.last,
-            let gameHistoryViewController = embeddedViewController as? GameHistoryViewController
-            else { return }
-        let play = PlayGameUseCase(p1: newGameView.p1(),
-                               p2: newGameView.p2(),
-                               observer: RPSPlayGameObserver(view: newGameView,
-                                                         gameHistoryViewController: gameHistoryViewController),
-                               repo: gameRepository)
-        play.execute()
+        guard let playGame = playGame else { return }
+        playGame.execute(p1: newGameView.p1(), p2: newGameView.p2())
     }
 }

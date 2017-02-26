@@ -5,12 +5,13 @@ class GameHistoryViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView?
 
     var gameRepository: GameRepository? = nil
-    var observer: RPSFetchGamesObserver? = nil
     var games: [Game] = []
+    var fetchGames: FetchGames?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        observer = RPSFetchGamesObserver(callback: { (games: [Game]) in
+        guard let gameRepository = gameRepository else { return }
+        let observer = RPSFetchGamesObserver(callback: { (games: [Game]) in
             self.games = games
             DispatchQueue.main.async {
                 if let tableView = self.tableView {
@@ -18,15 +19,13 @@ class GameHistoryViewController: UIViewController {
                 }
             }
         })
+        fetchGames = FetchGames(observer: observer, repo: gameRepository)
 
         displayGames()
     }
 
     func displayGames() {
-        guard let gameRepository = gameRepository else { return }
-        guard let observer = observer else { return }
-
-        let fetchGames = FetchGamesUseCase(observer: observer, repo: gameRepository)
+        guard let fetchGames = fetchGames else { return }
         fetchGames.execute()
     }
 }
