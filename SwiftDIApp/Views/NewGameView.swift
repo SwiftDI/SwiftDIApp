@@ -14,9 +14,11 @@ class NewGameView: UIView {
     }
 
     func display(result: String) {
-        guard let gameResultLabel = self.gameResultLabel else { return }
-        gameResultLabel.isHidden = false
-        gameResultLabel.text = result
+        DispatchQueue.main.async {
+            guard let gameResultLabel = self.gameResultLabel else { return }
+            gameResultLabel.isHidden = false
+            gameResultLabel.text = result
+        }
     }
 
     private func trimmed(textField: UITextField?) -> String {
