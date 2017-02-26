@@ -2,6 +2,8 @@ import SwiftDIHLP
 import Foundation
 
 class InMemoryGameRepository: GameRepository {
+    static let shared = InMemoryGameRepository()
+
     private var games: [Game] = []
 
     func save(game: Game, completion: @escaping SaveGameCompletion) {

@@ -2,6 +2,8 @@ import SwiftDIHLP
 import Foundation
 
 class RESTfulGameRepository: GameRepository {
+    static let shared = RESTfulGameRepository()
+
     private let urlSession: URLSession
 
     convenience init() {

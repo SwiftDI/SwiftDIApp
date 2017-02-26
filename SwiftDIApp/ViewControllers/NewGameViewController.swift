@@ -3,7 +3,6 @@ import SwiftDIHLP
 
 class NewGameViewController: UIViewController {
     var newGameView: NewGameView { return self.view as! NewGameView }
-    let gameRepository = RESTfulGameRepository()
     var playGame: PlayGame?
 
     override func viewDidLoad() {
@@ -12,14 +11,7 @@ class NewGameViewController: UIViewController {
               let gameHistoryViewController = embeddedViewController as? GameHistoryViewController
                 else { return }
         let observer = iOSPlayGameObserver(view: newGameView, gameHistoryViewController: gameHistoryViewController)
-        playGame = PlayGame(observer: observer, repo: gameRepository)
-    }
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "EmbedGameHistoryViewController") {
-            guard let gameHistoryViewController = segue.destination as? GameHistoryViewController else { return }
-            gameHistoryViewController.gameRepository = gameRepository
-        }
+        playGame = PlayGame(observer: observer, repo: Config.gameRepository)
     }
 
     @IBAction func playButtonTapped() {

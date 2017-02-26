@@ -4,13 +4,11 @@ import SwiftDIHLP
 class GameHistoryViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView?
 
-    var gameRepository: GameRepository? = nil
     var games: [Game] = []
     var fetchGames: FetchGames?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        guard let gameRepository = gameRepository else { return }
         let observer = iOSFetchGamesObserver(callback: { (games: [Game]) in
             self.games = games
             DispatchQueue.main.async {
@@ -19,7 +17,7 @@ class GameHistoryViewController: UIViewController {
                 }
             }
         })
-        fetchGames = FetchGames(observer: observer, repo: gameRepository)
+        fetchGames = FetchGames(observer: observer, repo: Config.gameRepository)
 
         displayGames()
     }

@@ -20,6 +20,7 @@
 		FA286F841E43F03B00F6278F /* iOSFetchGamesObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA286F831E43F03B00F6278F /* iOSFetchGamesObserver.swift */; };
 		FA286FA11E44E05D00F6278F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA286FA01E44E05D00F6278F /* XCTest.framework */; };
 		FA286FA81E44E38400F6278F /* InMemoryGameRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA286FA71E44E38400F6278F /* InMemoryGameRepositoryTests.swift */; };
+		FA3469821E62853100F4F048 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3469811E62853100F4F048 /* Config.swift */; };
 		FA7F159D1E4ABEC00047B199 /* FlatFileGameRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7F159C1E4ABEC00047B199 /* FlatFileGameRepositoryTests.swift */; };
 		FA7F159F1E4ABF080047B199 /* FlatFileGameRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7F159E1E4ABF080047B199 /* FlatFileGameRepository.swift */; };
 		FA7F15A21E4AC7590047B199 /* Game+Serializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7F15A11E4AC7590047B199 /* Game+Serializable.swift */; };
@@ -62,6 +63,7 @@
 		FA286F831E43F03B00F6278F /* iOSFetchGamesObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iOSFetchGamesObserver.swift; sourceTree = "<group>"; };
 		FA286FA01E44E05D00F6278F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		FA286FA71E44E38400F6278F /* InMemoryGameRepositoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InMemoryGameRepositoryTests.swift; sourceTree = "<group>"; };
+		FA3469811E62853100F4F048 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		FA7F159C1E4ABEC00047B199 /* FlatFileGameRepositoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlatFileGameRepositoryTests.swift; sourceTree = "<group>"; };
 		FA7F159E1E4ABF080047B199 /* FlatFileGameRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlatFileGameRepository.swift; sourceTree = "<group>"; };
 		FA7F15A11E4AC7590047B199 /* Game+Serializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Game+Serializable.swift"; sourceTree = "<group>"; };
@@ -233,6 +235,7 @@
 				FA286F581E4397CE00F6278F /* Repositories */,
 				FA286F551E43974300F6278F /* Observers */,
 				FABC02EE1E40DF02000FCB6C /* AppDelegate.swift */,
+				FA3469811E62853100F4F048 /* Config.swift */,
 				FABC02F21E40DF02000FCB6C /* Main.storyboard */,
 				FABC02F51E40DF02000FCB6C /* Assets.xcassets */,
 				FABC02F71E40DF02000FCB6C /* LaunchScreen.storyboard */,
@@ -470,6 +473,7 @@
 				FA7F15A51E4AC7B90047B199 /* Archiver.swift in Sources */,
 				FA19D1661E4CA0D100227E2C /* NewGameView.swift in Sources */,
 				FA286F721E43D72700F6278F /* GameResult+display.swift in Sources */,
+				FA3469821E62853100F4F048 /* Config.swift in Sources */,
 				FAD036761E4D5776003B802C /* RESTfulGameRepository.swift in Sources */,
 				2DBA11FE381EDFC49EE62103 /* iOSFetchGameObserver.swift in Sources */,
 			);

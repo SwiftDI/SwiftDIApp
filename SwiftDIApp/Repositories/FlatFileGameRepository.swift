@@ -6,6 +6,8 @@ class GameArchiver: Archiver {
 }
 
 class FlatFileGameRepository: GameRepository {
+    static let shared = FlatFileGameRepository()
+
     private let fileURL: URL
     private var games: [Game] = []
     private let archiver: Archiver
