@@ -11,7 +11,7 @@ class NewGameViewController: UIViewController {
         guard let embeddedViewController = self.childViewControllers.last,
               let gameHistoryViewController = embeddedViewController as? GameHistoryViewController
                 else { return }
-        let observer = RPSPlayGameObserver(view: newGameView, gameHistoryViewController: gameHistoryViewController)
+        let observer = iOSPlayGameObserver(view: newGameView, gameHistoryViewController: gameHistoryViewController)
         playGame = PlayGame(observer: observer, repo: gameRepository)
     }
 

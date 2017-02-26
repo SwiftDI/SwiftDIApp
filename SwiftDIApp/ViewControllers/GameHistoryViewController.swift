@@ -11,7 +11,7 @@ class GameHistoryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         guard let gameRepository = gameRepository else { return }
-        let observer = RPSFetchGamesObserver(callback: { (games: [Game]) in
+        let observer = iOSFetchGamesObserver(callback: { (games: [Game]) in
             self.games = games
             DispatchQueue.main.async {
                 if let tableView = self.tableView {

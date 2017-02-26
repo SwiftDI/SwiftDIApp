@@ -1,7 +1,6 @@
 import SwiftDIHLP
 
-typealias GameObserverCallback = () -> Void
-class RPSPlayGameObserver: PlayGameObserver {
+class iOSPlayGameObserver: PlayGameObserver {
     let view: NewGameView
     let gameHistoryViewController: GameHistoryViewController
 
