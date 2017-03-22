@@ -6,22 +6,22 @@ PODS:
 DEPENDENCIES:
   - Nimble
   - Quick
-  - SwiftDIHLP (from `https://github.com/alexbasson/SwiftDIHLP.git`)
+  - SwiftDIHLP (from `https://github.com/SwiftDI/SwiftDIHLP.git`)
 
 EXTERNAL SOURCES:
   SwiftDIHLP:
-    :git: https://github.com/alexbasson/SwiftDIHLP.git
+    :git: https://github.com/SwiftDI/SwiftDIHLP.git
 
 CHECKOUT OPTIONS:
   SwiftDIHLP:
-    :commit: e18e03f9d3427bc17c568b3d3328ca902eee3d13
-    :git: https://github.com/alexbasson/SwiftDIHLP.git
+    :commit: f2245c0dc6f1002be11e685e5443e4e2e24028fb
+    :git: https://github.com/SwiftDI/SwiftDIHLP.git
 
 SPEC CHECKSUMS:
   Nimble: 1527fd1bd2b4cf0636251a36bc8ab37e81da8347
   Quick: dafc587e21eed9f4cab3249b9f9015b0b7a7f71d
-  SwiftDIHLP: 58540eb3dd1c78e2555c63e8808a315768bad132
+  SwiftDIHLP: 200a116461c2633534abcafd2c250ace4f558696
 
-PODFILE CHECKSUM: 420e4eec5ba9e0797b9124cf12380a1690619753
+PODFILE CHECKSUM: 4dacb74d191eb6d2f320dc779eb6d8a38c8d6abf
 
 COCOAPODS: 1.2.0

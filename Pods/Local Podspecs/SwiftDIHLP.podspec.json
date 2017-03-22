@@ -3,7 +3,7 @@
   "version": "0.0.17",
   "license": "<LICENSE>",
   "summary": "SwiftDI high level policy",
-  "homepage": "https://github.com/<PATH_TO_REPO>",
+  "homepage": "https://github.com/SwiftDI/SwiftDIHLP",
   "platforms": {
     "ios": "8.0"
   },

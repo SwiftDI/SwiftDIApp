@@ -3,7 +3,7 @@ platform :ios, '9.0'
 target 'SwiftDIApp' do
   use_frameworks!
 
-  pod 'SwiftDIHLP', git: 'https://github.com/alexbasson/SwiftDIHLP.git'
+  pod 'SwiftDIHLP', git: 'https://github.com/SwiftDI/SwiftDIHLP.git'
 
   target 'SwiftDIAppTests' do
     inherit! :search_paths
