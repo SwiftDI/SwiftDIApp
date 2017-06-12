@@ -9,6 +9,11 @@ class GameHistoryViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        displayGames()
+    }
+
+    func displayGames() {
         let observer = iOSFetchGamesObserver(callback: { (games: [Game]) in
             self.games = games
             DispatchQueue.main.async {
@@ -17,14 +22,8 @@ class GameHistoryViewController: UIViewController {
                 }
             }
         })
-        fetchGames = FetchGames(observer: observer, repo: Config.gameRepository)
-
-        displayGames()
-    }
-
-    func displayGames() {
-        guard let fetchGames = fetchGames else { return }
-        fetchGames.execute()
+        let fetchGames = FetchGames(repo: Config.gameRepository)
+        fetchGames.execute(observer: observer)
     }
 }
 
