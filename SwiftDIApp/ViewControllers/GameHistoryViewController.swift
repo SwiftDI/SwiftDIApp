@@ -5,7 +5,6 @@ class GameHistoryViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView?
 
     var games: [Game] = []
-    var fetchGames: FetchGames?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,8 +21,7 @@ class GameHistoryViewController: UIViewController {
                 }
             }
         })
-        let fetchGames = FetchGames(repo: Config.gameRepository)
-        fetchGames.execute(observer: observer)
+        UseCases.fetchGames.execute(observer: observer)
     }
 }
 

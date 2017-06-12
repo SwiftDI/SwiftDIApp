@@ -9,7 +9,6 @@ class NewGameViewController: UIViewController {
             let gameHistoryViewController = embeddedViewController as? GameHistoryViewController
             else { return }
         let observer = iOSPlayGameObserver(view: newGameView, gameHistoryViewController: gameHistoryViewController)
-        let playGame = PlayGame(repo: Config.gameRepository)
-        playGame.execute(p1: newGameView.p1(), p2: newGameView.p2(), observer: observer)
+        UseCases.playGame.execute(p1: newGameView.p1(), p2: newGameView.p2(), observer: observer)
     }
 }
